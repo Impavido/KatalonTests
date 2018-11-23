@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Crypto</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>BTC</description>
+      <initValue>'https://coinmarketcap.com/de/currencies/bitcoin/'</initValue>
+      <name>URL_BTC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>XRP</description>
+      <initValue>'https://coinmarketcap.com/de/currencies/ripple/'</initValue>
+      <name>URL_XRP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://coinmarketcap.com/de/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

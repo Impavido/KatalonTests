@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>YT_Trends</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Youtube Swiss</description>
+      <initValue>'youtube.ch'</initValue>
+      <name>URL1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Youtube Russia</description>
+      <initValue>'youtube.ru'</initValue>
+      <name>URL2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Youtube UK</description>
+      <initValue>'youtube.co.uk'</initValue>
+      <name>URL3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Youtube Germany</description>
+      <initValue>'youtube.de'</initValue>
+      <name>URL4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Youtube France</description>
+      <initValue>'youtube.fr'</initValue>
+      <name>URL5</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Youtube USA</description>
+      <initValue>'youtube.com'</initValue>
+      <name>URL9</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
