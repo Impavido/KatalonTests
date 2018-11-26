@@ -1,4 +1,3 @@
-
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
@@ -15,7 +14,6 @@ def xpathCellChoice = "//nav[@id='navigation-area']//div//ul//li[1]//button[1]"
 def xpathSortAfter = "/html/body/div[4]/div[2]/section/div/div/div[2]/div/div[3]/div[1]/div[3]/div/div[1]/div[2]/div/select"
 def xpathSortAfterNewest = "/html/body/div[4]/div[2]/section/div/div/div[2]/div/div[3]/div[1]/div[3]/div/div[1]/div[2]/div"
 def xpathBewertung = '''//span[@id='select2-jthh-container']'''
-
 
 def xpathOptions = "/html/body/div[4]/div[2]/section/div/div/div[2]/div/div[3]/div[1]/div[3]/div/div[1]/div[2]/div/select/option"
 
@@ -59,6 +57,8 @@ props = new ArrayList<TestObjectProperty>()
 props.add(new TestObjectProperty('xpath', ConditionType.EQUALS, xpathOptions))
 toOption.setProperties(props)
 
+def vEP = false
+
 /*
  * Test start
  */
@@ -77,23 +77,18 @@ Thread.sleep(2000)
 
 WebUI.click(toCellChoice)
 
-WebUI.verifyElementPresent(toSortAfter, 10)
+if(vEP == true){
+	WebUI.verifyElementPresent(toSortAfter, 10)
+	
+	WebUI.verifyElementPresent(toSortAfterNewest, 10)
+	
+	WebUI.verifyElementPresent(toOption, 10)
+	
+	WebUI.verifyElementPresent(toBewertung, 10)
+	
+	WebUI.verifyElementPresent(toNeueste, 10)
+}
 
-WebUI.verifyElementPresent(toSortAfterNewest, 10)
-
-WebUI.verifyElementPresent(toOption, 10)
-
-//WebUI.click(toSortAfterNewest)
-//
-//WebUI.verifyElementPresent(toBewertung, 10)
-//
-//WebUI.verifyElementPresent(toNeueste, 10)
-
-//WebUI.scrollToElement(toBewertung, 10)
-//WebUI.click(toBewertung)
-
-//WebUI.selectOptionByIndex(toSortAfter, 1)
-//(toSortAfter, "/de/Search/ShowTab?so=7&q=HTC+U12&tab=2&filterProductTypes=24&_=1542800023399#listhead", false)
 
 WebDriver webDriver = DriverFactory.getWebDriver()
 

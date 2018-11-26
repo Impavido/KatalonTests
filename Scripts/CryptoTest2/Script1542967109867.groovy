@@ -50,10 +50,10 @@ def currency = ''
 //True if you want to see the increase this year
 def final A_YEAR_AGO = false
 
-//(0)If you want to check out BTC only, (1) if you want to check out XRP too
+//(0)If you want to check out BTC only, (1) if you want to check out XRP too, (2) if you want to check out a random one too
 def final CHECK = 0
 
-//Choose how many days in the past you want to go
+//Choose how many days into the past you want to go
 def final DAYS_AGO = 7
 
 /*

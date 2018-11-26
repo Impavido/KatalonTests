@@ -11,7 +11,6 @@ class CustomFunctions {
 
 	@Keyword
 	def highlight(def text){
-
 		println('\n   ' + text + '   \n')
 	}
 
@@ -29,5 +28,5 @@ class CustomFunctions {
 	 KeywordUtil.markFailed("Fail to click on element")
 	 }
 	 }
-	*/
+	 */
 }
